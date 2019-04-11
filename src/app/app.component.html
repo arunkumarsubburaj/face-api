@@ -1,0 +1,14 @@
+<div id="mainContainer">
+  <video id="video" autoplay #videoElement width="300" height="450" style="display:none"></video>
+  <div id="canvasContainer"><canvas id="canvas" #canvasElement width="300" height="450"></canvas>
+    <canvas id="overlay" #overlayElement width="300" height="450"></canvas>
+  </div>
+</div>
+<div>
+  <span id="result">No Faces detected!!!</span>
+  <div>
+    <label for="name">Enter the Name: </label> <input type="text" id="name" name="name">
+  </div>
+  <button id="addFace" value="addFace" (click)="addFace()">Add Face</button>
+  <button id="identify" value="identify" (click)="detectFace()">Identify Face</button>
+</div>
